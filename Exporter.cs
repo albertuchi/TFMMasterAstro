@@ -15,7 +15,7 @@ namespace NetCoreCode
                 // Create a file to write to.
                 using (StreamWriter sw = File.CreateText(ExportFileName))
                 {
-                    sw.WriteLine(" XX  Z= .XXXX  1  (ae)           ");
+                    sw.WriteLine(" XX  Z= .XXXX  1  (alpha enhanced)           ");
                     sw.WriteLine("===========================================================================================================================");
                     sw.WriteLine("   INPUT FILE           M(in)/Mo  AGE(My)  log(L)  log(Te)   M/Mo      Mc_He   He_s        C_s         N_s         O_s");
                     sw.WriteLine("===========================================================================================================================");
