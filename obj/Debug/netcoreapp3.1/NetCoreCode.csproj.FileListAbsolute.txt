@@ -1,0 +1,13 @@
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\bin\Debug\netcoreapp3.1\NetCoreCode.exe
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\bin\Debug\netcoreapp3.1\NetCoreCode.deps.json
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\bin\Debug\netcoreapp3.1\NetCoreCode.runtimeconfig.json
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\bin\Debug\netcoreapp3.1\NetCoreCode.runtimeconfig.dev.json
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\bin\Debug\netcoreapp3.1\NetCoreCode.dll
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\bin\Debug\netcoreapp3.1\NetCoreCode.pdb
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.csprojAssemblyReference.cache
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.AssemblyInfoInputs.cache
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.AssemblyInfo.cs
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.dll
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.pdb
+C:\Users\alber\OneDrive\Máster VIU\Asignaturas\14MAST Trabajo Fin de Máster\NetCoreCode\obj\Debug\netcoreapp3.1\NetCoreCode.genruntimeconfig.cache
