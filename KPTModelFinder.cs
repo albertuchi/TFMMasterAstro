@@ -29,6 +29,8 @@ namespace NetCoreCode
             {
                 return null; // There are some cases where there are no more models after the last keypoint, so the serializer just return that value
             }
+
+            //The POINT relevant for you is this local maximum in the surface luminosity once the L3a/Ls started increasing
             var logLModelsToSearch = models.Where(m=> 
                                             m.Line >= minimumL3s.Line && 
                                             m.Line <= (minimumL3s.Line + 50)); 
