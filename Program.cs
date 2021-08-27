@@ -58,6 +58,11 @@ namespace NetCoreCode
                 }
             }
 
+            foreach (var file in filesWithProblem)
+            {
+                Console.WriteLine(file);
+            }
+
             Console.WriteLine("Completed!");
         }
     }
