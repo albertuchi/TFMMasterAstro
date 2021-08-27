@@ -41,11 +41,11 @@ namespace NetCoreCode
             for(var i=0; i< models.Count()-1; i++)
             {
                 var currentModel = models.ElementAt(i);
-                if(currentModel.ModelNumber > models.ElementAt(i+1).ModelNumber)
+                currentModel.NormalizedModelNumber = currentModel.ModelNumber + (10000 * numberOfTimesModelNumberReset);
+                if (currentModel.ModelNumber > models.ElementAt(i+1).ModelNumber)
                 {
                     numberOfTimesModelNumberReset++;
                 }
-                currentModel.NormalizedModelNumber = currentModel.ModelNumber +  (10000 * numberOfTimesModelNumberReset);
             }
             var lastModel = models.ElementAt(models.Count() -1);
             lastModel.NormalizedModelNumber = lastModel.ModelNumber +  (10000 * numberOfTimesModelNumberReset);   
