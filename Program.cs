@@ -44,17 +44,14 @@ namespace NetCoreCode
                         var chsFile = chsFiles.Single(f => f.Contains(fileModelNameWithoutExtension));
                         var chsModels = CHSFileParser.ParseFile(chsFile);
                         var chsModel = CHSModelFinder.FindModel(chsModels, kptModel);
-                        if (chsModel != null) //Remove this after solving issue with missing chsmodel
-                        {
-                            var initialMass = double.Parse(modelName.Substring(0, 4)) * Math.Pow(10, -2);
-                            Exporter.Export(kptModel, chsModel, modelName, initialMass);
-                        }
+                        var initialMass = double.Parse(modelName.Substring(0, 4)) * Math.Pow(10, -2);
+                        Exporter.Export(kptModel, chsModel, modelName, initialMass);
                     }
                     else
                     {
                         if (kptModels.Count() <= 1) // Remove after debugging input file
                         {
-                            filesWithProblem.Add($"File: {file}, Problem: The kptmodel list parsed is empty or just have one element"); 
+                            filesWithProblem.Add($"File: {file}, Problem: The kptmodel list parsed is empty or just have one element");
                         }
                         break;
                     }

@@ -9,6 +9,12 @@ namespace NetCoreCode
         public static CHSModel FindModel(IEnumerable<CHSModel> models, KPTModel kptModel)
         {
             var model = models.SingleOrDefault(m=> m.NormalizedModelNumber == kptModel.ModelNumber);
+
+            if (model == null)
+            {
+                model = models.Last();
+            }
+
             return model;
         }
     }
