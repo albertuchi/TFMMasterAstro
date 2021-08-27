@@ -31,7 +31,12 @@ namespace NetCoreCode
                 {
                     var kptModels = KPTFileParser.ParseFile(file);
                     var keyPointModel = kptModels.FirstOrDefault(); // We start parsing from the last KeyPoint
-                    if (keyPointModel != null && keyPointModel.logTmax < 8.6 && kptModels.Count() > 1) // Some times kptmodels just have 1 element, we skip those
+                    if (keyPointModel == null || kptModels.Count() <= 1) // Some times kptmodels just have 1 element, we skip those
+                    {
+                        filesWithProblem.Add($"File: {file}, Problem: The kptmodel list parsed is empty or just have one element");
+                        continue;
+                    }
+                    if (keyPointModel.logTmax < 8.6)
                     {
                         var kptModel = KPTModelFinder.FindModel(kptModels);
                         if (kptModel == null)
@@ -49,14 +54,7 @@ namespace NetCoreCode
                     }
                     else
                     {
-                        if (kptModels.Count() <= 1) // Remove after debugging input file
-                        {
-                            filesWithProblem.Add($"File: {file}, Problem: The kptmodel list parsed is empty or just have one element");
-                        }
-                        else
-                        {
-                            break;
-                        }
+                        break;
                     }
                 }
             }
