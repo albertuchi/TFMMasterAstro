@@ -36,6 +36,7 @@ namespace NetCoreCode
                         var kptModel = KPTModelFinder.FindModel(kptModels);
                         if (kptModel == null)
                         {
+                            filesWithProblem.Add($"File: {file}, Problem: The minimum could not be found (not change of tendency?)");
                             continue; // This means that we have not found any local minumin
                         }
                         var fileModelNameWithoutExtension = Path.GetFileNameWithoutExtension(file);
