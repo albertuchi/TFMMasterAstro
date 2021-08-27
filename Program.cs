@@ -53,7 +53,10 @@ namespace NetCoreCode
                         {
                             filesWithProblem.Add($"File: {file}, Problem: The kptmodel list parsed is empty or just have one element");
                         }
-                        break;
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
             }
