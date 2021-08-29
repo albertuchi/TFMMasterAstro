@@ -14,6 +14,7 @@ namespace NetCoreCode
         public double L3aLs { get; set; }
         public double ActualMass { get; set; }
         public double logTmax { get; set; }
+        public double Metallicity { get; set; }
 
         public KPTModel(int line, 
                         int modelNumber, 
@@ -23,7 +24,8 @@ namespace NetCoreCode
                         double HeCoreMass,
                         double l3aLs, 
                         double actualMass, 
-                        double logTmax)
+                        double logTmax,
+                        double metallicity)
         {
             this.Line = line;
             this.ModelNumber = modelNumber;
@@ -34,6 +36,7 @@ namespace NetCoreCode
             this.L3aLs = l3aLs;
             this.ActualMass = actualMass;
             this.logTmax = logTmax;
+            this.Metallicity = metallicity;
         }
     }
 }
