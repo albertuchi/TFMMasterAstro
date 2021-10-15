@@ -12,7 +12,7 @@ namespace NetCoreCode
             var modelsToCheckTendency = new List<KPTModel>();
             for(var i=0; i< models.Count()-1; i++)
             {
-                var isLocalMinimun = models.ElementAt(i).L3aLs < models.ElementAt(i+1).L3aLs; //This can fail, out of range exception
+                var isLocalMinimun = models.ElementAt(i).L3aLs < models.ElementAt(i+1).L3aLs;
                 if(isLocalMinimun) 
                 {
                     modelsToCheckTendency = models.Skip(i+1).Take(100).ToList();

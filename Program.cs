@@ -14,13 +14,9 @@ namespace NetCoreCode
             CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
             CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
-            var filesWithProblem = new List<String>(); // Remove after debugging input file
+            var filesWithProblem = new List<String>(); //List to control errors
 
-            /*Test model with the instructions provided by Santi
-            var kptModelstest = KPTFileParser.ParseFile("C:/Users/alber/OneDrive/Máster VIU/Asignaturas/14MAST Trabajo Fin de Máster/NetCoreCode/file_foragbext_ae\\FEHp006\\0090z332y290aede1.kpt");
-            var kptModeltest= KPTModelFinder.FindModel(kptModelstest);*/
-
-            var directories = Directory.GetDirectories(@"C:/Users/alber/OneDrive/Máster VIU/Asignaturas/14MAST Trabajo Fin de Máster/NetCoreCode/file_foragbext_ae");
+            var directories = Directory.GetDirectories(@"C:/file_foragbext_ae"); //Parsed to the root path
             foreach (var directory in directories)
             {
                 string[] kptFiles = Directory.GetFiles(directory, "*.kpt");
